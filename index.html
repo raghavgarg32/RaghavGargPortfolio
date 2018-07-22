@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hello Bulma!</title>
+		<link rel="stylesheet" 
+		href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="aos.css" />
+
+        <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+		<style>
+body{
+	padding-top: 4%; 
+	padding-bottom: 6%;
+
+}
+
+
+h1{
+text-align: center;
+padding-top:1%;
+padding-bottom: 2%;
+font-size:500%;
+color:#000000 
+}
+
+.skillbar {
+    position:relative;
+    display:block;
+    margin-bottom:15px;
+    width:100%;
+    background:#eee;
+    height:35px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    -webkit-transition:0.4s linear;
+    -moz-transition:0.4s linear;
+    -ms-transition:0.4s linear;
+    -o-transition:0.4s linear;
+    transition:0.4s linear;
+    -webkit-transition-property:width, background-color;
+    -moz-transition-property:width, background-color;
+    -ms-transition-property:width, background-color;
+    -o-transition-property:width, background-color;
+    transition-property:width, background-color;
+}
+.skillbar-title {
+    position:absolute;
+    top:0;
+    left:0;
+    font-weight:bold;
+    font-size:13px;
+    color:#fff;
+    background:#6adcfa;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:4px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+    display:block;
+    background:rgba(0, 0, 0, 0.1);
+    padding:0 20px;
+    height:35px;
+    line-height:35px;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:3px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+    height:35px;
+    width:0px;
+    background:#6adcfa;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+    position:absolute;
+    right:10px;
+    top:0;
+    font-size:11px;
+    height:35px;
+    line-height:35px;
+    color:#444;
+    color:rgba(0, 0, 0, 0.4);
+}
+
+.is-shady {
+animation: flyintoright .4s backwards;
+background: #fff;
+box-shadow: rgba(0, 0, 0, .1) 0 1px 0;
+border-radius: 4px;
+margin: 10px;
+position: relative;
+transition: all .2s ease-in-out;
+}
+.is-shady:hover {
+box-shadow: 0 10px 16px rgba(0, 0, 0, .13), 0 6px 6px rgba(0, 0, 0, .19);
+}
+/*adds font awesome stars*/
+footer li:before {
+  content: '\f1b2';
+  font-family: 'FontAwesome';
+  float: left;
+  margin-left: -1.5em;
+  color: #147efb;
+}
+.hero.is-info {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url('banner.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+		</style>
+	</head>
+	<body>
+			<nav class="navbar is-fixed-top">
+					<div class="container">
+						<div class="navbar-brand">
+						
+							<span class="navbar-burger burger" data-target="navbarMenu"  onclick="toggleBurger()">
+							<span></span>
+							<span></span>
+							<span></span>
+							</span>
+						</div>
+						<div id="navbarMenu" class="navbar-menu">
+							<div class="navbar-end">
+								<a class="navbar-item is-active" href="#screen0">
+										About Me
+									</a>
+								<a class="navbar-item" href="#screen1">
+										Skills
+									</a>
+								<a class="navbar-item" href="#screen2">
+										Experience
+									</a>
+								<a class="navbar-item" href="#screen3">
+										Projects
+									</a>
+								<a class="navbar-item" href="#screen4">
+										Contact Me
+									</a>
+									<a class="navbar-item" href="raghav_garg_CV.pdf" download="CV">
+											Download CV
+										</a>
+								
+							</div>
+						</div>
+					</div>
+				</nav>
+
+			<section class="hero is-info">
+					<div class="hero-body">
+					  <div class="columns">
+						<div class="column">
+						  <div class="container content">
+							
+							<h1 class="title" style="font-size: 500%; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Raghav Garg</h1>
+						
+							<a href="https://github.com/raghavgarg32" target="_blank" class="button is-primary is-large">
+							  <span class="icon">
+								<i class="fab fa-github"></i>
+							  </span>
+							  <span>Github</span>
+							</a>
+							<a href="https://www.linkedin.com/in/raghavgarg32/" target="_blank" class="button is-info is-large">
+								<span class="icon">
+								  <i class="fab fa-linkedin"></i>
+								</span>
+								<span>Linkedin</span>
+							  </a>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </section>
+		<!-- /.hero -->
+
+		<section class="section" id = "screen0">
+			<div class="container">
+				<div class="columns">
+					<div class="column">
+							<h1 data-aos="fade-up"> About Me </h1>
+
+
+
+						<div data-aos="fade-up" class="notification">
+							<div class= "level">
+								<div class= "level-left">
+								<img src="me.png">
+							</div>
+							<div style="padding-left:4%">
+							Hi! I am a software engineering student who is studying at The Unviersity of Auckland. I have always been passionate about technology.
+							Since I was a child I have been working on my own projects to get a better insight on how things work.
+							I'm always excited to approach new challenges and technologies. I'm a quick learner so I'm able to grasp new technologies really quickly.
+							Now I'm making my passion into my career. I am a hard working and presistent student. I never give up no 
+							matter difficult circumstances and challenges become. I'm always ready. ᕕ( ᐛ )ᕗ <br><br>
+							Hobbies and Interests:<br>
+							<li>Football ⚽</li>
+								<li>Tennis 🎾</li>
+									<li>Gaming 🎮</li>
+						</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section" id="screen1">
+				<div class="container">
+					<div class="columns">
+						<div class="column">
+								<h1 data-aos="fade-up">Skills</h1>
+	
+							<div data-aos="fade-up" class="notification">
+									<div class="skillbar clearfix " data-percent="90%">
+											<div class="skillbar-title" style="background: #3385ff;"><span>Java</span></div>
+											<div class="skillbar-bar" style="background: #3385ff;"></div>
+											<div class="skill-bar-percent">90%</div>
+										</div>
+										<div class="skillbar clearfix " data-percent="80%">
+												<div class="skillbar-title" style="background: #3385ff;"><span>C</span></div>
+												<div class="skillbar-bar" style="background: #3385ff;"></div>
+												<div class="skill-bar-percent">70%</div>
+											</div>
+											<div class="skillbar clearfix " data-percent="70%">
+													<div class="skillbar-title" style="background: #3385ff;"><span>MATLAB</span></div>
+													<div class="skillbar-bar" style="background: #3385ff;"></div>
+													<div class="skill-bar-percent">70%</div>
+												</div>
+												<div class="skillbar clearfix " data-percent="65%">
+														<div class="skillbar-title" style="background: #3385ff;"><span>Node.js</span></div>
+														<div class="skillbar-bar" style="background: #3385ff;"></div>
+														<div class="skill-bar-percent">65%</div>
+													</div>
+													<div class="skillbar clearfix " data-percent="60%">
+															<div class="skillbar-title" style="background: #3385ff;"><span>Python</span></div>
+															<div class="skillbar-bar" style="background: #3385ff;"></div>
+															<div class="skill-bar-percent">60%</div>
+														</div>
+														<div class="skillbar clearfix " data-percent="58%">
+																<div class="skillbar-title" style="background: #3385ff;"><span>HTML</span></div>
+																<div class="skillbar-bar" style="background: #3385ff;"></div>
+																<div class="skill-bar-percent">60%</div>
+															</div>
+															<div class="skillbar clearfix " data-percent="55%">
+																	<div class="skillbar-title" style="background: #3385ff;"><span>CSS</span></div>
+																	<div class="skillbar-bar" style="background: #3385ff;"></div>
+																	<div class="skill-bar-percent">60%</div>
+																</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>		<section class="section" id="screen2">
+					<div class="container">
+						<div class="columns">
+							<div class="column">
+									<h1 data-aos="fade-up">Experience</h1>
+		
+								<div data-aos="fade-up" class="notification" style="align-content: center">
+										<div class="column is-4 " style="margin-left: auto; margin-right: auto">
+												<div class="card is-shady">
+													<div class="card-image has-text-centered">
+														<img src="spark64.png" alt="work">
+													</div>
+													<div class="card-content">
+														<div class="content">
+															<h4>Software Engineering Intern – Spark 64 Ltd <i>(December 2017 - March 2017)</i> </h4>
+															<li>Contributed software engineering expertise in the development of a chatbot that helps people find
+																	the right gift. I contributed towards adding a new feature to the existing chatbot which allows users to
+																	ask for gift suggestions and give gift suggestions to other users.</li>
+															<li>To implement this feature, I used Node.js, AWS services and Bot framework services.</li>
+															<li>The feature I worked on is now in beta and will soon be released in production.</li>
+															<p><a href="https://www.spark64.com/">Spark 64</a></p>
+
+														</div>
+													</div>
+												</div>
+											</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>		<section class="section" id="screen3">
+						<div class="container">
+							<div class="columns">
+								<div class="column">
+										<h1 data-aos="fade-up">Projects</h1>
+			
+									<div data-aos="fade-up" class="notification">
+											<div class="columns features">
+
+											<div class="column is-4">
+													<div class="card is-shady">
+														<div class="card-image has-text-centered">
+															<img src="banner.png" alt="GSD">
+														</div>
+														<div class="card-content">
+															<div class="content">
+																<h4>Get Stuff Done -  A time management app</h4>
+																<p>I always wanted to improve my time management skills and I could never find and app that suits me.
+																 So I made my own. Using Android Studio I programmed this app in Java and xml. I also have to manage a database
+																which is on the users device using SQLite. This app is available on the Google Play Store. The code for this website is on my GitHub</p>
+																	<p><a href="https://play.google.com/store/apps/details?id=raghavgarg.getstuffdone">Link to app</a></p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="column is-4">
+													<div class="card is-shady">
+														<div class="card-image has-text-centered">
+																<img src="contoso.PNG" alt="contoso">
+															</div>
+														<div class="card-content">
+															<div class="content">
+																<h4>Banking Chatbot and Website</h4>
+																<p>I used Bot framework and node.js to design a banking chat bot, then created a website
+																		using HTML, CSS and JavaScript to host the bot. Hosted the website on azure web services.
+																		The code for this website is on my GitHub</p>
+																<p><a href="https://contosowebsite32.azurewebsites.net/">Link to website</a></p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="column is-4">
+													<div class="card is-shady">
+														<div class="card-image has-text-centered">
+																<img src="chowpow.jpg" alt="chowpow">
+														</div>
+														<div class="card-content">
+															<div class="content">
+																<h4> ChowPow - An allergy app </h4>
+																<p>(Still in development) Using Microsoft Cognitive Services - Custom vision I developed a Microsoft
+																		Xamarin cross platform app. It is targeted towards people with allergies. Users will be able to use it scan
+																		menus and know what meals out of the menu they can eat. This was my teams submission for
+																		Microsoft Imagine Cup. The code for this website is on my GitHub	</div>
+														</div>
+													</div>
+												</div>
+										
+									</div>
+									<div class="columns features">
+
+											<div class="column is-4">
+													<div class="card is-shady">
+														<div class="card-image has-text-centered">
+																<img src="space.jpg" alt="space">
+
+														</div>
+														<div class="card-content">
+															<div class="content">
+																<h4>Space Voyage Game</h4>
+																<p>In high school I developed my own game using the language LUA and using Corona SDK.
+																This was one of the fun side projects that I did during High School. This app is available on the Google Play Store.
+																<p><a href="https://play.google.com/store/apps/details?id=com.acme.games.SpaceVoyage">Link to app</a></p>
+
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="column is-4">
+													<div class="card is-shady">
+														<div class="card-image has-text-centered">
+																<img src="myweb.PNG" alt="myweb">
+														</div>
+														<div class="card-content">
+															<div class="content">
+																<h4>My Portfolio Website (this website)</h4>
+																<p>To create this website I used HTML, CSS and JavaScript. For the styling I used the BULMA css framework and for the scrolling animation I used the Animation On Scroll library. The code for this website is on my GitHub </p>
+																<p><a href="#">Link to website</a></p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="column is-4">
+													<div class="card is-shady">
+														<div class="card-image has-text-centered">
+																<img src="comingsoon.png" alt="comingsoon">
+														</div>
+														<div class="card-content">
+															<div class="content">
+																<h4>New projects coming soon!</h4>
+																<p>I'm currently working on new projects and they should be done by a later date. Stay tuned!
+															</div>
+														</div>
+													</div>
+												</div>
+										
+									</div>
+												
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="section" id = "screen4">
+							<div class="container">
+								<div class="columns">
+									<div class="column">
+											<h1 data-aos="fade-up"> Contact Me </h1>
+				
+				
+				
+										<div data-aos="fade-up" class="notification">
+											Phone Number: +642102701871<br>
+											Email: <a>raghavgarg32@gmail.com</a><br>
+											Address: 11 Soaring Bird Drive, Takanini, Auckland, New Zealand
+		
+										</div>
+										</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+		<!-- /.section -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+		  AOS.init({
+			  offset: 200,
+			  duration: 1500,
+		  });
+		  function toggleBurger() {
+    var burger = $('.burger');
+    var menu = $('.navbar-menu');
+    burger.toggleClass('is-active');
+    menu.toggleClass('is-active');
+}
+		  jQuery(document).ready(function(){
+	jQuery('.skillbar').each(function(){
+		jQuery(this).find('.skillbar-bar').animate({
+			width:jQuery(this).attr('data-percent')
+		},6000);
+	});
+});
+
+
+		</script>
+		<script src="aos.js"></script>
+	</body>
+</html>
